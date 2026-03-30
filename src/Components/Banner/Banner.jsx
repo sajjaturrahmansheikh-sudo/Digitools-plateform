@@ -5,7 +5,7 @@ const Banner = () => {
     return (
         <div className='container mx-auto py-20'>
 
-            <div className='flex justify-between items-center gap-14'>
+            <div className='lg:flex justify-between items-center gap-14'>
 
                 <div className='space-y-4'>
                     <div className="badge badge-soft badge-primary"><img src="/src/assets/Group 5.png" alt="bedge logo" /> New: AI-Powered Tools Available</div>
