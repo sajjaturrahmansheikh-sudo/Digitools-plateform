@@ -12,7 +12,7 @@ const Toolcard = ({tool, carts, setCarts}) => {
         
         if(isFound){
             toast.error("Item already in cart");
-            return
+            return 
         }
 
         setCarts([...carts, tool])

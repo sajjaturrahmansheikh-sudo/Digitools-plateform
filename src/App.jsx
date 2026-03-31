@@ -6,6 +6,7 @@ import Cart from './Components/Cart'
 import Navbar from './Components/Navbar/Navbar'
 import Status from './Components/Status/Status'
 import Tools from './Components/Tools/Tools'
+import Getstarted from './Components/Getstarted'
 
 const getCarts = async () => {
   const res = await fetch("/Cartdata.json")
@@ -52,6 +53,11 @@ function App() {
 
       {activeTab === "products" && <Tools cartsPromis={cartsPromis} carts={carts} setCarts={setCarts}></Tools>}
       {activeTab === "cart" && <Cart carts={carts} setCarts={setCarts}></Cart>}
+
+    <Getstarted></Getstarted>
+
+
+
     </>
   )
 }
