@@ -1,16 +1,26 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# DigiTools- Plateform
 
-Currently, two official plugins are available:
+-- DigiTools is a versatile, all-in-one web plateform that brings together a collection of high-performance digital tools.
+   Built with a focus on speed and user experience, it eliminates the need for miltiple bookmarks by providing developers 
+   and creators with a centralized hub for data transformatin, formattin, and analysis.
+   
+-- Technical Stack
+   
+   •Frontend: React.js(Component-based architecture for last,dynamic Ui)
+   
+   •Styling: Tailwind CSS(Utility-first styling for complete design control)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+   •UI Components: daisiUI (Beautiful, accessible, and customizable tailwind-based components).
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-- Key Features
 
-## Expanding the ESLint configuration
+   • Developer Utilities: Instant code formatting JSON validation, and unit conversation .
+   • Content Optimization: Text manipulation tools, word counters.
+   • API-First-Design: Robust architecture ensuring fast processing and real-time results.
+   • Seamless UX: A clean,responsive interface designed for rapid navigation and accessibility.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+
