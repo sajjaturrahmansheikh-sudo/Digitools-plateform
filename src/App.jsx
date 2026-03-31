@@ -8,6 +8,7 @@ import Status from './Components/Status/Status'
 import Tools from './Components/Tools/Tools'
 import Getstarted from './Components/Getstarted'
 import Pricing from './Components/Pricing'
+import Footer from './Components/Footer'
 
 const getCarts = async () => {
   const res = await fetch("/Cartdata.json")
@@ -58,6 +59,8 @@ function App() {
     <Getstarted></Getstarted>
 
     <Pricing></Pricing>
+
+    <Footer></Footer>
 
 
 
