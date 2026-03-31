@@ -8,7 +8,7 @@ import Status from './Components/Status/Status'
 import Tools from './Components/Tools/Tools'
 
 const getCarts = async () => {
-  const res = await fetch("/public/Cartdata.json")
+  const res = await fetch("/Cartdata.json")
   return res.json();
 }
 const cartsPromis = getCarts();
@@ -16,9 +16,9 @@ const cartsPromis = getCarts();
 
 function App() {
 
-    const [activeTab , setActiveTab] = useState("products");
-    const [carts , setCarts] = useState([]);
-  
+  const [activeTab, setActiveTab] = useState("products");
+  const [carts, setCarts] = useState([]);
+
 
   return (
     <>
@@ -35,7 +35,7 @@ function App() {
         <input
           type="radio"
           name="my_tabs_1"
-          className="tab w-40 rounded-full"
+          className={`tab w-40 rounded-full ${activeTab === "products" ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : ""}`}
           aria-label="Products"
           onClick={() => setActiveTab("products")}
           defaultChecked
@@ -44,8 +44,8 @@ function App() {
         <input
           type="radio"
           name="my_tabs_1"
-          className="tab w-40 rounded-full"
-          aria-label="Cart"
+          className={`tab w-40 rounded-full ${activeTab === "cart" ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : ""}`}
+          aria-label={`Cart (${carts.length})`}
           onClick={() => setActiveTab("cart")}
         />
       </div>

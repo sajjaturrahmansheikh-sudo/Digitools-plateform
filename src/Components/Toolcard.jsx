@@ -1,12 +1,22 @@
 import { useState } from "react";
 
 import { FaCheck } from 'react-icons/fa';
+import { toast } from "react-toastify";
 
 const Toolcard = ({tool, carts, setCarts}) => {
     const [isBuying, setBuying] = useState(false);
     const handleBuying = ()=>{
-        setBuying(true)
+        setBuying(true);
+
+        const isFound = carts.find(item=> item.id === tool.id);
+        
+        if(isFound){
+            toast.error("Item already in cart");
+            return
+        }
+
         setCarts([...carts, tool])
+        toast.success('Item added to cart!')
     }
     return (
         <div key={tool.id} className='shadow-lg px-6 py-3 rounded-lg space-y-3 border-[#F2F2F2] border-2'>
